@@ -3,7 +3,7 @@ App available to download at https://play.google.com/store/apps/details?id=com.p
 
 # Calculator Android App
 
-Calculator is a powerful and versatile Android app that provides advanced math-solving capabilities. Whether you need to perform basic arithmetic or complex scientific calculations, Calculator has you covered. 
+Calculator is a powerful and versatile Android app that provides advanced math-solving capabilities.   Whether you need to perform basic arithmetic or complex scientific calculations, Calculator has you covered. 
 
 ## Features
 
