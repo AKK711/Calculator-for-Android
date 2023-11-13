@@ -30,7 +30,6 @@ Calculator is a powerful and versatile Android app that provides advanced math-s
 
 ## Screenshots
 
-Include screenshots of your app to give users a visual preview of the interface and features.
 ![ss 1](https://github.com/AKK711/Calculator-for-Android/assets/142080233/3ef8db95-c28f-4536-959e-bef2b02a1a58)
 
 ![ss 3](https://github.com/AKK711/Calculator-for-Android/assets/142080233/6686ea99-e790-4d72-9f99-709e0fb2508a)
