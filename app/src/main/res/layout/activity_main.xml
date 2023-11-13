@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_tv_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5570842831633224/8213687858"></com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/tvsec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_tv_main"
+        android:gravity="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textAlignment="gravity"
+        android:textColor="#252525"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/tvmain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_tv_main"
+        android:gravity="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="viewEnd"
+        android:textColor="#252525"
+        android:textSize="42sp" />
+
+    <LinearLayout
+        android:id="@+id/l0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#DEF3E9"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/b2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ac"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="@string/ac"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="@string/pi"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="@string/b1"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bmode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="rad"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="24sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bsqaure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="^"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bmplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="m+"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bsin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="sin"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="26sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bcos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="cos"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="26sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="tan"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="26sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="log"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="26sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bln"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="ln"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bmmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="m-"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bfact"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="x!"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/binv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="@string/_1_x"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bsqrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b5"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="√"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bdiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b1"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="÷"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="7"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="8"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="9"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bmul"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:background="#DEF3E9"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="×"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="4"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="5"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="6"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:background="#DEF3E9"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="-"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="1"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="2"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="3"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b4"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="+"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FBFFF6"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:fontFamily="cursive"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="h"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="0"
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bdot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="."
+                        android:textColor="#252525"
+                        android:textSize="30sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/be"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="e"
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/bc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_white"
+                        android:hapticFeedbackEnabled="true"
+                        android:src="@drawable/baseline_backspace_24"
+                        android:textColor="#252525"
+                        android:textSize="28sp"></androidx.appcompat.widget.AppCompatImageButton>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bequal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b2_green"
+                        android:hapticFeedbackEnabled="true"
+                        android:text="m= ="
+                        android:textAllCaps="false"
+                        android:textColor="#252525"
+                        android:textSize="27sp"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
